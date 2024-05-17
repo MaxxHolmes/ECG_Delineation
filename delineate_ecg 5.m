@@ -79,7 +79,7 @@ function [QRS_start_idx, QRS_end_idx, QRS_end_flag, QRS_duration, t_wave_duratio
     segment = V(QRS_end_idx+100:999);
     t_magnitude = max(abs(segment));
     peak_idx = find(abs(segment)==abs(t_magnitude), 1, "last");
-    t_peak_idx = QRS_end_idx + 100 + peak_idx;
+    t_peak_idx = QRS_end_idx + 100 + peak_idx - 1;
     t_sign = sign(V(t_peak_idx));
     t_magnitude_true = t_sign * t_magnitude;
 
@@ -102,6 +102,8 @@ function [QRS_start_idx, QRS_end_idx, QRS_end_flag, QRS_duration, t_wave_duratio
         for i = t_peak_idx-20:-1:QRS_end_idx
             tstart_window = abs(get_window(dV, i, width));
             if tstart_window < T_start_tol
+                i
+                tstart_window
                 if max(abs(V(i-30:i-1))) < abs(V(i)) & abs(V(i)) < 0.5 * t_magnitude
                     t_wave_start_idx = i;
                     break
