@@ -1,5 +1,5 @@
 # ECG_Delineation
-Simulated ECG Delineation Code. Hannah Smith and Maxx Holmes; 2024. Translated into Python by Zhinou Jenny Wang.
+Simulated ECG Delineation Code. Hannah Smith and Maxx Holmes; 2024. Translated into Python by Zhinuo Jenny Wang.
 
 Updated version (v3) by Maxx Holmes & Leto Luana Riebel; 2026.
 
