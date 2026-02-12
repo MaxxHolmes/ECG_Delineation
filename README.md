@@ -1,5 +1,6 @@
 # ECG_Delineation
-Simulated ECG Delineation Code. Hannah Smith and Maxx Holmes; 2024.
+Simulated ECG Delineation Code. Hannah Smith and Maxx Holmes; 2024. Translated into Python by Zhinou Jenny Wang.
+Updated version (v3) by Maxx Holmes & Luana Leto Riebel; 2026.
 
 Custom ECG delineation script that works on gradient analysis of sliding windows. ECG delineation is a tricky problem, particularly for ECGs with significant pathology. Off the shelf solutions did not work, particularly on chronic infarct cases, so we made a solution that capitalises on various features of these ECGs (like no P waves, no recording noise and a T wave that goes back to zero with no DADs).
 
