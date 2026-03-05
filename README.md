@@ -7,7 +7,7 @@ Custom ECG delineation script that works on gradient analysis of sliding windows
 
 Warning: We developed this code specifically to work with simulated ECGs generated using meshes generated from UK Biobank datasets. These were calibrated and validated using ECGs with features present in chronic infarction, such as bipid t-waves, inverted t-waves and ST segment elevation. Features such as delayed after-depolarisations (DADs) and p-waves were not specifically considered during development, and analysis results may vary. Use at your own risk.
 
-If you choose to use this code, please acknowledge us by citing the github repository. Hannah Smith and Maxx Holmes. https://github.com/MaxxHolmes/ECG_Delineation
+If you choose to use this code, please acknowledge us by citing the github repository. Hannah Smith and Maxx Holmes. https://github.com/MaxxHolmes/ECG_Delineation, and the original publication this was presented in. Holmes et al. 2025 https://doi.org/10.1002/cnm.3140 
 
 How this solution works:
 1. Firstly, determine QRS start time
